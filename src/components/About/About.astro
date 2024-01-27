@@ -52,10 +52,16 @@ import User from "../../icons/User.astro";
   .info-img {
     display: flex;
     align-items: center;
-    justify-content: center;
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: var(--background-color);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    padding: 3rem;
+    max-width: 80ch;
+    justify-content: space-around;
     flex-wrap: wrap-reverse;
+    /* gap: 1rem; */
     row-gap: 2rem;
-    column-gap: 2rem;
   }
 
   .about-section-h3 {
@@ -75,8 +81,8 @@ import User from "../../icons/User.astro";
   }
 
   .picture-img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
 
   .picture-img img {
@@ -85,6 +91,11 @@ import User from "../../icons/User.astro";
     border-radius: 50%;
     object-fit: cover;
     object-position: right;
-    box-shadow: 1px 1px 10px var(--secondary-color);
+  }
+
+  @media screen and (max-width: 750px) {
+    .info-img {
+      justify-content: center;
+    }
   }
 </style>

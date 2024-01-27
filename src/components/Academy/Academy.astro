@@ -94,8 +94,20 @@ import School from "../../icons/School.astro";
     gap: 0.5rem;
     margin-top: 10px;
     position: relative;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    gap: 0.5rem;
+    max-width: 67ch;
+    margin-top: 10px;
+    position: relative;
+
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: var(--background-color);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
   }
 
   .academy-section-h4 {

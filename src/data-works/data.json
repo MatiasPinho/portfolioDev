@@ -2,7 +2,7 @@
   "proyectos": [
     {
       "title": "Codespresso - Ecommerce ",
-      "description": "Proyecto Full Stack con Front End React JS y Back End MySQL y Express JS. Diseñado en Figma, presenta un catálogo de productos, opiniones y funcionalidades administrativas. Interfaz intuitiva y fluida conexión Front-Back End. Proyecto que tuvimos la oportunidad de presentar en Prisma frente a diversas empresas",
+      "description": "Proyecto Full Stack con Front End en React JS y Back End en MySQL y Express JS. Diseñado en Figma, presenta un catálogo de productos, opiniones y funcionalidades administrativas. La interfaz es intuitiva y hay una fluida conexión entre el Front-End y el Back-End. Todo esto se llevó a cabo en equipo mediante metodologías ágiles de Scrum. Tuvimos la oportunidad de presentar este proyecto en Prisma frente a diversas empresas.",
       "tecnologias": [
         "HTML",
         "CSS",
