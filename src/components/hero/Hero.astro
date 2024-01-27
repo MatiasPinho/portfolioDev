@@ -1,0 +1,258 @@
+---
+import Github from "../../icons/Github.astro";
+import Gmail from "../../icons/Gmail.astro";
+import Linkedin from "../../icons/Linkedin.astro";
+import Send from "../../icons/Send.astro";
+---
+
+<section class="hero-section-container">
+  <!-- <div class="bubble"></div> -->
+  <article class="hero-content-left">
+    <div class="hero-content-left-texts-line-container">
+      <div class="hero-content-left-texts-h1-cv">
+        <h1 class="hero-content-left-texts-h1">
+          ¡Hola! Soy <strong>Matías</strong>
+        </h1>
+        <span class="cv-download">CV</span>
+      </div>
+      <h2 class="hero-content-left-texts-paragraph">
+        <strong>Desarrollador Web</strong>, especializado en la creación de
+        productos digitales con énfasis en el desarrollo Front-end.
+        <strong>Proporciono</strong> soluciones web <strong>eficientes</strong> y
+        <strong>atractivas</strong>.
+      </h2>
+
+      <button class="hero-content-left-texts-button">
+        Trabaja conmigo <Send />
+      </button>
+      <div class="social-pil">
+        <a href=""> <Linkedin /> <span>LinkedIn</span></a>
+        <a href=""> <Github /> <span>Github</span></a>
+        <a href=""><Gmail /> <span>Email</span></a>
+      </div>
+    </div>
+
+    <picture class="hero-content-right-picture">
+      <img src="./profile-pic.png" alt="" />
+    </picture>
+  </article>
+</section>
+
+<style>
+  .hero-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-content-container {
+    position: relative;
+    display: flex;
+  }
+
+  .hero-content-left {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: var(--background-color);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    animation: cambiarColorBorde 4s linear infinite;
+    background-position: center;
+    padding: 4rem 0rem;
+    margin-top: 5%;
+    width: 851px;
+    max-width: 95%;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+  }
+
+  .hero-content-left-social-pil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 11%;
+    align-items: center;
+  }
+
+  .hero-content-left-social-pil-ul-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    flex: 1.2;
+    justify-content: flex-end;
+  }
+
+  .hero-content-left-social-pil-ul-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    flex: 0.8;
+    justify-content: center;
+  }
+
+  .hero-content-left-texts-line-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-content-left-texts-line {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-content-left-texts-h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .hero-content-left-texts-h1-cv {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .hero-content-left-texts-h2-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-content-left-texts-h2 {
+    font-size: 18px;
+    font-weight: 520;
+  }
+
+  .hero-content-left-texts-paragraph {
+    font-weight: bold;
+    max-width: 44ch;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .hero-content-left-texts-button {
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1rem;
+    width: 22ch;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .social-pil {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .social-pil a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--social-background);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+  }
+
+  .hero-content-right-picture {
+    display: block;
+    width: 200px;
+    min-width: 200px;
+    height: 220px;
+    min-height: 220px;
+    border-radius: 65% 35% 35% 65% / 48% 34% 66% 52%;
+    background-color: var(--primary-color);
+  }
+
+  .hero-content-right-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 65% 35% 35% 65% / 48% 34% 66% 52%;
+    background-color: var(--primary-color);
+    object-fit: cover;
+  }
+
+  .cv-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    font-weight: bold;
+    color: #90acf5;
+  }
+
+  @keyframes cambiarColorBorde {
+    0% {
+      border-color: var(--border-color);
+    }
+    50% {
+      border-color: var(--accent-color);
+    }
+    100% {
+      border-color: var(--border-color);
+    }
+  }
+
+  .bubble {
+    border-radius: 81% 19% 53% 47% / 12% 65% 35% 88%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(#b39ef9, #90acf5);
+    box-shadow:
+      -170px 110px 100px 200px #b39ef9,
+      260px 100px 200px 250px #90acf5;
+  }
+
+  @media (max-width: 800px) {
+    .hero-content-left-texts-h1 {
+      font-size: 35px;
+    }
+
+    .hero-content-left-texts-paragraph {
+      font-size: 16px;
+      max-width: 33ch;
+    }
+
+    .hero-content-left-texts-button {
+      padding: 0.8rem;
+    }
+
+    .hero-content-right-picture {
+      width: 160px;
+      min-width: 160px;
+      height: 180px;
+      min-height: 180px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .hero-content-left {
+      padding: 3.5rem 0.8rem;
+      row-gap: 2rem;
+    }
+
+    .hero-content-left-texts-h1-cv {
+      flex-wrap: wrap;
+    }
+  }
+</style>

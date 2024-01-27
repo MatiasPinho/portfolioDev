@@ -1,0 +1,37 @@
+{
+  "proyectos": [
+    {
+      "title": "Codespresso - Ecommerce ",
+      "description": "Proyecto Full Stack con Front End React JS y Back End MySQL y Express JS. Diseñado en Figma, presenta un catálogo de productos, opiniones y funcionalidades administrativas. Interfaz intuitiva y fluida conexión Front-Back End. Proyecto que tuvimos la oportunidad de presentar en Prisma frente a diversas empresas",
+      "tecnologias": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Express JS",
+        "React JS",
+        "MySQL",
+        "Figma",
+        "Trabajo en Equipo - Scrum"
+      ],
+      "imagen": "./codepresso-destokp.png",
+      "linkGithub": "https://github.com/IIAGUSII/Proyecto-Coffe",
+      "linkWeb": "https://codespresso-ecommerce.vercel.app/"
+    },
+    {
+      "title": "Adivina el numero - Juego",
+      "description": "Este juego nació cuando mi profesor usó un número aleatorio. Inspirado por esta idea, decidí crear una aplicación que también utilizara números aleatorios. El juego ofrece diferentes niveles de dificultad para añadir variedad y desafío.",
+      "tecnologias": ["HTML", "CSS", "JavaScript", "React JS", "Figma"],
+      "imagen": "./adivinaElNumero.png",
+      "linkGithub": "https://github.com/MatiasPinho/Adivina-el-numero",
+      "linkWeb": "https://adivina-el-numero-matias-pinho.netlify.app/"
+    },
+    {
+      "title": "Calculadora - Herramienta",
+      "description": "Este proyecto nacio cuando quise integrar DOM de manera optima y practicar de la manera mas practica. Una calculadora que permite realizar operaciones basicas como suma, resta, multiplicación y división",
+      "tecnologias": ["HTML", "CSS", "JavaScript"],
+      "imagen": "./calculate.png",
+      "linkGithub": "https://github.com/MatiasPinho/Calculate",
+      "linkWeb": "https://calculate-matias-pinho.netlify.app/"
+    }
+  ]
+}

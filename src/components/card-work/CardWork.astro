@@ -1,0 +1,94 @@
+---
+import Github from "../../icons/Github.astro";
+import Web from "../../icons/Web.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  tecnologias: Array<string>;
+  imagen: string;
+  linkGithub: string;
+  linkWeb: string;
+}
+const { title, description, tecnologias, imagen, linkGithub, linkWeb } =
+  Astro.props;
+---
+
+<article class="card-work-content">
+  <h4 class="card-work-content-h4">{title}</h4>
+  <p class="card-work-content-description">{description}</p>
+  <ul class="card-work-content-tecnologias">
+    {tecnologias.map((tecnologia) => <li>{tecnologia}</li>)}
+  </ul>
+  <picture class="card-work-content-imagen">
+    <img class="card-work-content-imagen" src={imagen} alt="proyecto" />
+  </picture>
+  <div class="card-work-content-links">
+    <a href={linkGithub} target="_blank"> <Github /> Ver codigo fuente</a>
+    <a href={linkWeb} target="_blank"> <Web /> Ver sitio web</a>
+  </div>
+</article>
+<style>
+  .card-work-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .card-work-content-h4 {
+    font-size: 24px;
+    color: var(--accent-color);
+  }
+
+  .card-work-content-description {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .card-work-content-tecnologias {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+
+  .card-work-content-tecnologias li {
+    background-color: var(--primary-color);
+    padding: 0.4rem 0.7rem;
+    border-radius: 20px;
+  }
+
+  .card-work-content-imagen {
+    max-width: 95%;
+    max-height: 350px;
+    border-radius: 4px;
+  }
+
+  .card-work-content-imagen img {
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0px 11px 32px -14px #90acf5; */
+    border-radius: 4px;
+  }
+
+  .card-work-content-links {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .card-work-content-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    background-color: var(--social-background);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+  }
+</style>

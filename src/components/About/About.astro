@@ -1,0 +1,89 @@
+---
+import User from "../../icons/User.astro";
+---
+
+<section class="about-section">
+  <h3 class="about-section-h3">
+    <User /> Sobre mi
+  </h3>
+  <section class="info-img-container">
+    <div class="info-img">
+      <article class="about-section-article">
+        <p class="about-section-p">
+          Hola, soy Matías Pinho, un <strong
+            >desarrollador web freelancer</strong
+          >. Recientemente terminé mi diplomatura en la Universidad Tecnológica
+          Nacional gracias a una beca de la <strong>Fundación Empujar</strong>.
+          Entre más de 3500 candidatos, fui uno de los <strong
+            >100 seleccionados</strong
+          >.
+        </p>
+
+        <p class="about-section-p">
+          Durante el programa, mi equipo y yo tuvimos la oportunidad de ser uno
+          de los <strong>4 grupos</strong> que presentaron su proyecto final en Prisma
+          ante varias empresas.
+        </p>
+
+        <p class="about-section-p">
+          Mi objetivo es seguir formándome día a día como <strong
+            >desarrollador web</strong
+          >, para seguir aportando soluciones web.
+        </p>
+      </article>
+      <picture class="picture-img">
+        <img src="./picture.png" alt="" />
+      </picture>
+    </div>
+  </section>
+</section>
+
+<style>
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    width: 851px;
+    max-width: 95%;
+    margin: 0 auto;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .info-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+
+  .about-section-h3 {
+    color: var(--secondary-color);
+    font-size: 32px;
+  }
+
+  .about-section-article {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+
+  .about-section p {
+    font-size: 16px;
+    max-width: 45ch;
+  }
+
+  .picture-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .picture-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: right;
+  }
+</style>

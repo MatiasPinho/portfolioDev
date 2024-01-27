@@ -1,0 +1,62 @@
+---
+import Moon from "../../icons/Moon.astro";
+---
+
+<header class="header">
+  <h4>Matias Pinho</h4>
+  <nav class="header-nav">
+    <ul class="header-ul">
+      <li class="header-ul-li active"><a href="#">Inicio</a></li>
+      <li class="header-ul-li"><a href="#">Proyectos</a></li>
+      <li class="header-ul-li"><a href="#">Sobre mi</a></li>
+      <li class="header-ul-li"><a href="#">Habilidades</a></li>
+      <li class="header-ul-li"><a href="#">Contacto</a></li>
+      <li><Moon /></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .header {
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    z-index: 1;
+  }
+
+  .header h4 {
+    color: var(--secondary-color);
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .header-ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  header li {
+    cursor: pointer;
+  }
+
+  .header-ul-li a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  .active a {
+    color: var(--accent-color);
+  }
+</style>

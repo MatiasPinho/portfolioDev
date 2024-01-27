@@ -1,0 +1,116 @@
+---
+import School from "../../icons/School.astro";
+---
+
+<section class="academy-section">
+  <h3 class="academy-section-h3"><School /> Formacion academica</h3>
+  <ul class="ul-academy">
+    <li class="li-academy">
+      <p class="academy-section-circle">.</p>
+      <article class="academy-section-article">
+        <h4 class="academy-section-h4">
+          Diplomatura Full Stack - Universidad Tecnologica Nacional
+        </h4>
+        <p class="academy-section-describe">
+          Experiencia en HTML, CSS, React para interfaces atractivas.
+          Habilidades en JavaScript, Node.js, TypeScript para aplicaciones web
+          dinámicas. Conocimiento en bases de datos para el desarrollo del
+          back-end.
+        </p>
+        <p class="academy-section-date">Jun 2023 - dic 2023</p>
+      </article>
+    </li>
+    <li class="li-academy">
+      <p class="academy-section-circle">.</p>
+      <article class="academy-section-article">
+        <h4 class="academy-section-h4">
+          Fundacion Empujar + emplear - Habilidades blandas y competencias
+          laborales
+        </h4>
+        <p class="academy-section-describe">
+          Formación en currículum, búsqueda de empleo y entrevistas con expertos
+          en Recursos Humanos. Destrezas en Scrum y trabajo en equipo.
+        </p>
+        <p class="academy-section-date">Jun 2023 - dic 2023</p>
+      </article>
+    </li>
+    <li class="li-academy">
+      <p class="academy-section-circle">.</p>
+      <article class="academy-section-article">
+        <h4 class="academy-section-h4">
+          Educacion Secundaria - Instituto Manuel Dorrego
+        </h4>
+        <p class="academy-section-describe">
+          Formacion secundaria con orientacion a sociales
+        </p>
+        <p class="academy-section-date">Jun 2015 - dic 2021</p>
+      </article>
+    </li>
+  </ul>
+</section>
+
+<style>
+  .academy-section {
+    display: flex;
+    flex-direction: column;
+    width: 851px;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .academy-section-h3 {
+    color: var(--secondary-color: );
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .ul-academy {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style-type: none;
+    border-left: 2px solid var(--secondary-color);
+    margin-left: 2%;
+  }
+
+  .li-academy {
+  }
+
+  .academy-section-circle {
+    /* background-color: var(--primary-color); */
+    position: relative;
+    font-size: 110px;
+    color: var(--primary-color);
+    width: 30px;
+    height: 30px;
+    bottom: 49px;
+    left: -15px;
+  }
+
+  .academy-section-article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    gap: 0.5rem;
+    margin-top: 10px;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .academy-section-h4 {
+    font-size: 20px;
+    color: var(--accent-color);
+  }
+
+  .academy-section-describe {
+    max-width: 55ch;
+    text-wrap: pretty;
+    font-size: 16px;
+  }
+
+  .academy-section-date {
+    color: var(--accent-color);
+    font-size: 14px;
+  }
+</style>
