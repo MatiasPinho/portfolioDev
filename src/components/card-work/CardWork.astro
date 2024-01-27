@@ -42,7 +42,7 @@ const { title, description, tecnologias, imagen, linkGithub, linkWeb } =
     background-color: var(--background-color);
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    padding: 1rem;
+    padding: 1rem 0rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -51,11 +51,15 @@ const { title, description, tecnologias, imagen, linkGithub, linkWeb } =
   .card-work-content-h4 {
     font-size: 24px;
     color: var(--accent-color);
+    padding: 1rem;
+    text-align: left;
+    padding: 0 1rem;
   }
 
   .card-work-content-description {
     font-size: 18px;
     line-height: 23px;
+    padding: 0 1rem;
   }
 
   .card-work-content-tecnologias {
@@ -64,6 +68,7 @@ const { title, description, tecnologias, imagen, linkGithub, linkWeb } =
     list-style-type: none;
     flex-wrap: wrap;
     font-size: 12px;
+    padding: 0 1rem;
   }
 
   .card-work-content-tecnologias li {
@@ -109,5 +114,11 @@ const { title, description, tecnologias, imagen, linkGithub, linkWeb } =
   .card-work-content-links a:hover {
     background-color: #90adf5;
     transform: scale(1.1);
+  }
+
+  @media (max-width: 480px) {
+    .card-work-content-h4 {
+      font-size: 23px;
+    }
   }
 </style>
