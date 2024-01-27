@@ -1,62 +1,95 @@
 ---
+import Menu from "../../icons/Menu.astro";
 import Moon from "../../icons/Moon.astro";
 ---
 
+<script>
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  hamburgerMenu.addEventListener("click", () => {
+    hamburgerMenu.classList.toggle("active-menu");
+  });
+</script>
+
 <header class="header">
   <h4>Matias Pinho</h4>
-  <nav class="header-nav">
+  <nav class="header-nav-desk">
     <ul class="header-ul">
       <li class="header-ul-li active"><a href="#">Inicio</a></li>
-      <li class="header-ul-li"><a href="#">Proyectos</a></li>
-      <li class="header-ul-li"><a href="#">Sobre mi</a></li>
-      <li class="header-ul-li"><a href="#">Habilidades</a></li>
+      <li class="header-ul-li"><a href="#works-id">Proyectos</a></li>
+      <li class="header-ul-li"><a href="#academy-id">Formacion</a></li>
+      <li class="header-ul-li"><a href="#about-id">Sobre mi</a></li>
       <li class="header-ul-li"><a href="#">Contacto</a></li>
       <li><Moon /></li>
     </ul>
   </nav>
+  <nav class="header-nav-mobile">
+    <span class="hamburger-menu">
+      <Menu />
+    </span>
+  </nav>
+
+  <style>
+    .header {
+      width: 100vw;
+      height: 5rem;
+      position: fixed;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      z-index: 1;
+    }
+
+    .header h4 {
+      color: var(--secondary-color);
+    }
+
+    .header-nav-desk {
+      display: flex;
+      justify-content: center;
+    }
+    .header-ul {
+      display: flex;
+      gap: 1rem;
+      list-style-type: none;
+      align-items: center;
+      font-size: 15px;
+    }
+
+    header li {
+      cursor: pointer;
+    }
+
+    .header-ul-li a {
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      color: var(--secondary-color);
+    }
+
+    .active a {
+      color: var(--accent-color);
+    }
+
+    .header-nav-mobile {
+      display: none;
+    }
+
+    @media screen and (max-width: 720px) {
+      .header-nav-desk {
+        display: none;
+      }
+
+      .header-nav-mobile {
+        display: flex;
+      }
+
+      .header {
+        justify-content: space-between;
+        padding: 0 2rem;
+        align-items: center;
+      }
+    }
+  </style>
 </header>
-
-<style>
-  .header {
-    width: 100vw;
-    height: 5rem;
-    position: fixed;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    z-index: 1;
-  }
-
-  .header h4 {
-    color: var(--secondary-color);
-  }
-
-  .header-nav {
-    display: flex;
-    justify-content: center;
-  }
-  .header-ul {
-    display: flex;
-    gap: 1rem;
-    list-style-type: none;
-    align-items: center;
-    font-size: 15px;
-  }
-
-  header li {
-    cursor: pointer;
-  }
-
-  .header-ul-li a {
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
-    color: var(--secondary-color);
-  }
-
-  .active a {
-    color: var(--accent-color);
-  }
-</style>
