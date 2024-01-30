@@ -20,7 +20,7 @@ import Menu from "../../icons/Menu.astro";
 </script>
 
 <header class="header">
-  <h4>Matias Pinho</h4>
+  <a class="header-logo-name" href="#">Matias Pinho</a>
   <nav class="header-nav-desk">
     <ul class="header-ul">
       <li class="header-ul-li active"><a href="#">Inicio</a></li>
@@ -60,11 +60,12 @@ import Menu from "../../icons/Menu.astro";
       z-index: 1;
     }
 
-    .header h4 {
+    .header-logo-name {
       color: var(--secondary-color);
       background-color: #0808086e;
       padding: 0.5rem 0.8rem;
       border-radius: 8px;
+      text-decoration: none;
     }
 
     .hamburger-menu {
