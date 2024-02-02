@@ -4,6 +4,7 @@ import Menu from "../../icons/Menu.astro";
 
 <script>
   const body = document.querySelector("body");
+
   const headerUlLi = document.querySelectorAll(".header-ul-li");
   headerUlLi.forEach((li) => {
     li.addEventListener("click", () => {
@@ -17,18 +18,61 @@ import Menu from "../../icons/Menu.astro";
     menuDeploy.classList.toggle("active-menu");
     body.classList.toggle("overflow");
   });
+  window.onscroll = function () {
+    console.log(scrollY);
+    const home = document.querySelector(".li-home");
+    const projects = document.querySelector(".li-projects");
+    const formation = document.querySelector(".li-formation");
+    const about = document.querySelector(".li-about");
+    const header = document.querySelector(".header-ul");
+
+    if (scrollY >= 0 && scrollY < 30) {
+      removeActiveClasses();
+      header.classList.remove("active-background");
+
+      home.classList.add("active");
+    }
+
+    if (scrollY >= 300 && scrollY < 800) {
+      removeActiveClasses();
+      about.classList.add("active");
+      header.classList.add("active-background");
+    }
+
+    if (scrollY >= 1000 && scrollY < 2600) {
+      removeActiveClasses();
+      projects.classList.add("active");
+    }
+
+    if (scrollY >= 3200 && scrollY < 3800) {
+      removeActiveClasses();
+      formation.classList.add("active");
+    }
+  };
+
+  function removeActiveClasses() {
+    const elements = document.querySelectorAll(
+      ".li-home, .li-projects, .li-formation, .li-about, .header-ul, .header-logo-name"
+    );
+    elements.forEach((element) => element.classList.remove("active"));
+  }
 </script>
 
 <header class="header">
-  <a class="header-logo-name" href="#">Matias Pinho</a>
   <nav class="header-nav-desk">
     <ul class="header-ul">
-      <li class="header-ul-li active"><a href="#">Inicio</a></li>
-      <li class="header-ul-li"><a href="#works-id">Proyectos</a></li>
-      <li class="header-ul-li"><a href="#academy-id">Formacion</a></li>
-      <li class="header-ul-li"><a href="#about-id">Sobre mi</a></li>
-      <!-- <li class="header-ul-li"><a href="#">Contacto</a></li> -->
-      <!-- <li><Moon /></li> -->
+      <li class="header-ul-li">
+        <a class="li-home active" href="#">Inicio</a>
+      </li>
+      <li class="header-ul-li">
+        <a class="li-about" href="#about-id">Sobre mí</a>
+      </li>
+      <li class="header-ul-li">
+        <a class="li-projects" href="#works-id">Proyectos</a>
+      </li>
+      <li class="header-ul-li">
+        <a class="li-formation" href="#academy-id">Formacion</a>
+      </li>
     </ul>
   </nav>
   <nav class="header-nav-mobile">
@@ -36,11 +80,18 @@ import Menu from "../../icons/Menu.astro";
       <Menu />
     </span>
     <ul class="menu-deploy">
-      <li class="header-ul-li"><a href="#">Inicio</a></li>
-      <li class="header-ul-li"><a href="#works-id">Proyectos</a></li>
-      <li class="header-ul-li"><a href="#academy-id">Formacion</a></li>
-      <li class="header-ul-li"><a href="#about-id">Sobre mi</a></li>
-      <!-- <li class="header-ul-li"><a href="#">Contacto</a></li> -->
+      <li class="header-ul-li">
+        <a class="header-ul-li-a-mobile" href="#">Inicio</a>
+      </li>
+      <li class="header-ul-li">
+        <a class="header-ul-li-a-mobile" href="#works-id">Proyectos</a>
+      </li>
+      <li class="header-ul-li">
+        <a class="header-ul-li-a-mobile" href="#academy-id">Formacion</a>
+      </li>
+      <li class="header-ul-li">
+        <a class="header-ul-li-a-mobile" href="#about-id">Sobre mi</a>
+      </li>
     </ul>
   </nav>
 
@@ -50,22 +101,25 @@ import Menu from "../../icons/Menu.astro";
     }
 
     .header {
-      width: 100vw;
+      width: 851px;
       height: 5rem;
       position: fixed;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: flex-start;
       align-items: center;
-
+      max-width: 95%;
+      left: 50%;
+      transform: translate(-50%);
       z-index: 1;
     }
 
     .header-logo-name {
       color: var(--secondary-color);
-      background-color: #0808086e;
-      padding: 0.5rem 0.8rem;
-      border-radius: 8px;
+
+      padding: 1rem;
+      border-radius: 999999px;
       text-decoration: none;
+      transition: 0.5s all;
     }
 
     .hamburger-menu {
@@ -82,16 +136,20 @@ import Menu from "../../icons/Menu.astro";
       list-style-type: none;
       align-items: center;
       font-size: 15px;
-      background-color: #0808086e;
-      padding: 0.5rem 0.8rem;
-      border-radius: 8px;
+
+      padding: 1rem 20px;
+      border-radius: 999999px;
+      transition: 0.5s all;
     }
 
     header li {
       cursor: pointer;
     }
 
-    .header-ul-li a {
+    .li-home,
+    .li-projects,
+    .li-formation,
+    .li-about {
       cursor: pointer;
       text-decoration: none;
       font-size: 17px;
@@ -100,13 +158,20 @@ import Menu from "../../icons/Menu.astro";
       transition: 0.5s all;
     }
 
-    .header-ul-li a:hover {
+    .li-home:hover,
+    .li-projects:hover,
+    .li-formation:hover,
+    .li-about:hover {
       color: var(--primary-color);
     }
 
-    /* .active a {
-      color: var(--accent-color);
-    } */
+    .active {
+      color: var(--primary-color);
+    }
+
+    .active-background {
+      background-color: var(--background-body-color);
+    }
 
     .header-nav-mobile {
       display: none;
@@ -146,21 +211,27 @@ import Menu from "../../icons/Menu.astro";
       border: 2px solid var(--accent-color);
     }
 
-    @media screen and (max-width: 720px) {
+    .header-ul-li-a-mobile {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 400px) {
+      .header {
+        width: 100vw;
+        max-width: none;
+        padding: 0 2rem;
+        left: auto;
+        transform: none;
+        background-color: var(--background-body-color);
+      }
+
       .header-nav-desk {
         display: none;
       }
 
       .header-nav-mobile {
         display: flex;
-        position: relative;
-      }
-
-      .header {
-        justify-content: space-between;
-        padding: 0 2rem;
-        align-items: center;
-        background-color: #0808086e;
       }
     }
   </style>

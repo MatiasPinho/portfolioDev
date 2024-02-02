@@ -16,7 +16,8 @@ import Send from "../../icons/Send.astro";
           </h1>
           <a
             href="https://drive.google.com/file/d/1FT0MDyF5QXn1qX5ARqDyub9DO0xPP5L2/view?usp=sharing"
-            class="cv-download">CV</a
+            target="_blank"
+            class="cv-download">Curriculum</a
           >
         </div>
         <div>
@@ -101,9 +102,9 @@ import Send from "../../icons/Send.astro";
       height: 100%;
       margin: 0 auto;
       -webkit-backdrop-filter: blur(16px) saturate(180%);
-      background-color: var(--background-color);
+      /* background-color: var(--background-color);
       border-radius: 12px;
-      border: 1px solid var(--border-color);
+      border: 1px solid var(--border-color); */
       animation: cambiarColorBorde 4s linear infinite;
       background-position: center;
       padding: 2.3rem 0rem;
@@ -114,7 +115,7 @@ import Send from "../../icons/Send.astro";
       flex-direction: column;
       flex-wrap: wrap-reverse;
       justify-content: center;
-      align-content: center;
+      align-content: flex-end;
     }
 
     .hero-content-left-social-pil {
@@ -254,11 +255,11 @@ import Send from "../../icons/Send.astro";
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1rem;
-      border-radius: 50%;
-      border: 2px solid var(--primary-color);
+      padding: 0.5rem 0.8rem;
+      border-radius: 9999px;
+      background-color: var(--accent-color);
       font-weight: bold;
-      color: #90acf5;
+      color: #ffffff;
       cursor: pointer;
       text-decoration: none;
       transition: 0.5s all;
@@ -293,28 +294,8 @@ import Send from "../../icons/Send.astro";
     }
 
     @media (max-width: 800px) {
-      .hero-content-left-texts-h1 {
-        font-size: 35px;
-      }
-
-      .hero-content-left-texts-paragraph {
-        font-size: 16px;
-        max-width: 33ch;
-      }
-
-      .hero-content-left-texts-button {
-        padding: 0.8rem;
-      }
-
-      .hero-content-right-picture {
-        width: 160px;
-        min-width: 160px;
-        height: 180px;
-        min-height: 180px;
-      }
-
-      .hero-section-container {
-        margin-top: auto;
+      .social-pil {
+        justify-content: center;
       }
     }
 
