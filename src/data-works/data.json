@@ -27,7 +27,7 @@
     },
     {
       "title": "Calculadora - Herramienta",
-      "description": "Este proyecto nacio cuando quise integrar DOM de manera optima y practicar de la manera mas practica. Una calculadora que permite realizar operaciones básicas como suma, resta, multiplicación y división",
+      "description": "Este proyecto nació cuando quise integrar el DOM de manera óptima y practicar de la manera más práctica. Una calculadora que permite realizar operaciones básicas como suma, resta, multiplicación y división.",
       "tecnologias": ["HTML", "CSS", "JavaScript"],
       "imagen": "./calculate.png",
       "linkGithub": "https://github.com/MatiasPinho/Calculate",
