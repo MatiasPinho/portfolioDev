@@ -13,25 +13,27 @@
         "Figma",
         "Trabajo en Equipo - Scrum"
       ],
-      "imagen": "./codepresso-destokp.png",
+      "imagen": "./codepresso-destokp.webp",
       "linkGithub": "https://github.com/IIAGUSII/Proyecto-Coffe",
-      "linkWeb": "https://codespresso-ecommerce.vercel.app/"
+      "condition": false
     },
     {
       "title": "Adivina el numero - Juego",
       "description": "Este juego nació cuando mi profesor usó un número aleatorio. Inspirado por esta idea, decidí crear una aplicación que también utilizara números aleatorios. El juego ofrece diferentes niveles de dificultad para añadir variedad y desafío.",
       "tecnologias": ["HTML", "CSS", "JavaScript", "React JS", "Figma"],
-      "imagen": "./adivinaElNumero.png",
+      "imagen": "./adivinaElNumero.webp",
       "linkGithub": "https://github.com/MatiasPinho/Adivina-el-numero",
-      "linkWeb": "https://adivina-el-numero-matias-pinho.netlify.app/"
+      "linkWeb": "https://adivina-el-numero-matias-pinho.netlify.app/",
+      "condition": true
     },
     {
       "title": "Calculadora - Herramienta",
       "description": "Este proyecto nació cuando quise integrar el DOM de manera óptima y practicar de la manera más práctica. Una calculadora que permite realizar operaciones básicas como suma, resta, multiplicación y división.",
       "tecnologias": ["HTML", "CSS", "JavaScript"],
-      "imagen": "./calculate.png",
+      "imagen": "./calculate.webp",
       "linkGithub": "https://github.com/MatiasPinho/Calculate",
-      "linkWeb": "https://calculate-matias-pinho.netlify.app/"
+      "linkWeb": "https://calculate-matias-pinho.netlify.app/",
+      "condition": true
     }
   ]
 }

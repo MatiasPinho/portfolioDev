@@ -94,13 +94,14 @@ import School from "../../icons/School.astro";
   .ul-academy {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2.5rem;
     list-style-type: none;
     border-left: 2px solid var(--secondary-color);
     margin-left: 16px;
   }
 
   .li-academy {
+    display: flex;
   }
 
   .academy-section-circle {
@@ -110,20 +111,20 @@ import School from "../../icons/School.astro";
     color: var(--primary-color);
     width: 30px;
     height: 30px;
-    bottom: 28px;
+    bottom: 57px;
     left: -15px;
   }
 
   .academy-section-article {
     display: flex;
     flex-direction: column;
-    margin-left: 2%;
+
     gap: 0.5rem;
     margin-top: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: 2%;
+
     gap: 0.5rem;
     max-width: 60ch;
     margin-top: 10px;
@@ -132,7 +133,7 @@ import School from "../../icons/School.astro";
     background-color: var(--background-color);
     border-radius: 12px;
     border: 1px solid var(--border-color); */
-    padding: 1.3rem;
+    padding: 1.3rem 0;
   }
 
   .academy-section-h4 {
@@ -153,7 +154,6 @@ import School from "../../icons/School.astro";
 
   @media screen and (max-width: 800px) {
     .academy-section-article {
-      margin-left: 3%;
     }
   }
 </style>
