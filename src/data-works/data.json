@@ -15,7 +15,8 @@
       ],
       "imagen": "./codepresso-destokp.webp",
       "linkGithub": "https://github.com/IIAGUSII/Proyecto-Coffe",
-      "condition": false
+      "condition": false,
+      "alternativeCondition":true
     },
     {
       "title": "Adivina el numero - Juego",
@@ -24,7 +25,8 @@
       "imagen": "./adivinaElNumero.webp",
       "linkGithub": "https://github.com/MatiasPinho/Adivina-el-numero",
       "linkWeb": "https://adivina-el-numero-matias-pinho.netlify.app/",
-      "condition": true
+      "condition": true,
+      "alternativeCondition":true
     },
     {
       "title": "Calculadora - Herramienta",
@@ -33,7 +35,8 @@
       "imagen": "./calculate.webp",
       "linkGithub": "https://github.com/MatiasPinho/Calculate",
       "linkWeb": "https://calculate-matias-pinho.netlify.app/",
-      "condition": true
+      "condition": true,
+      "alternativeCondition":true
     }
   ]
 }

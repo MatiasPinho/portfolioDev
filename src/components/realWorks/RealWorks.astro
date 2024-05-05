@@ -1,11 +1,11 @@
 ---
-import WorkData from "../../data-works/data.json";
-import Code from "../../icons/Code.astro";
+import WorkData from "../../data-works/data2.json";
+import Work from "../../icons/Work.astro";
 import CardWork from "../../components/card-work/CardWork.astro";
 ---
 
 <section id="works-id" class="works-section-container">
-  <h3 class="works-section-h3"><Code /> Proyectos</h3>
+  <h3 class="works-section-h3"><Work /> Trabajos</h3>
   {
     WorkData.proyectos.map((proyecto) => (
       <CardWork
@@ -35,5 +35,8 @@ import CardWork from "../../components/card-work/CardWork.astro";
   .works-section-h3 {
     font-size: 32px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 </style>
