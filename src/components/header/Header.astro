@@ -19,6 +19,7 @@ import Menu from "../../icons/Menu.astro";
     body.classList.toggle("overflow");
   });
   window.onscroll = function () {
+    console.log(scrollY);
     const home = document.querySelector(".li-home");
     const projects = document.querySelector(".li-projects");
     const formation = document.querySelector(".li-formation");
@@ -38,12 +39,12 @@ import Menu from "../../icons/Menu.astro";
       header.classList.add("active-background");
     }
 
-    if (scrollY >= 1000 && scrollY < 2600) {
+    if (scrollY >= 1000 && scrollY < 5200) {
       removeActiveClasses();
       projects.classList.add("active");
     }
 
-    if (scrollY >= 3200 && scrollY < 3800) {
+    if (scrollY >= 5200 && scrollY < 5500) {
       removeActiveClasses();
       formation.classList.add("active");
     }
