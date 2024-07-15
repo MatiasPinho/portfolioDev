@@ -1,52 +1,39 @@
 {
-    "proyectos": [
-      {
-        "title": "Mm Estudio - Landing Page ",
-        "description": "Mm Estudio es un estudio de ingeniería especializado en el diseño, cálculo y proyecto de estructuras de hormigón armado.",
-        "tecnologias": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "React JS",
-          "Figma"
-        ],
-        "imagen": "./mm.webp",
-        "linkWeb": "https://splendorous-piroshki-7cdcdb.netlify.app/",
-        "condition": true,
-        "alternativeCondition":false
-      },
-      {
-        "title": "Gk Consulting - Landing Page ",
-        "description": "Gk Consulting es un proyecto realizado para representar la asociación entre un estudio contable y uno jurídico. Ofrece una variedad de servicios legales, como resolución de disputas y gestión de contratos, así como servicios contables, como regularización impositiva y asesoramiento online.",
-        "tecnologias": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "React JS",
-          "Figma"
-        ],
-        "imagen": "./gkConsulting.webp",
-        "linkWeb": "https://www.gkconsulting.com.ar/",
-        "condition": true,
-        "alternativeCondition":false
-      },
-      {
-        "title": "Smart Trading - Landing Page",
-        "description": "Smart Trading es una landing page diseñada para promocionar un producto innovador que facilita la integración de la tecnología disponible en el mercado con los procesos operativos de los agentes de bolsa. Cuyo objetivo es reducir el esfuerzo manual entre colaboradores y mitigar riesgos operativos.",
-        "tecnologias": ["HTML", "CSS", "JavaScript", "Astro", "Figma"],
-        "imagen": "./smartTrading.webp",
-        "linkGithub": "https://github.com/MatiasPinho/Adivina-el-numero",
-        "linkWeb": "https://www.smartrading.com.ar/",
-        "condition": true
-      },
-      {
-        "title": "Children SAFETY program - Landing Page",
-        "description": "Children SAFETY Program es una landing page diseñada para presentar un programa destinado a abordar el temor diario de los padres y garantizar la protección de los niños en su día a día.",
-        "tecnologias": ["HTML", "CSS", "JavaScript","Astro","Figma"],
-        "imagen": "./childrenAlternative.webp",
-        "linkWeb": "https://csk-i23o.vercel.app/",
-        "condition": true
-      }
-    ]
-  }
-  
+  "proyectos": [
+    {
+      "title": "Mm Estudio - Landing Page ",
+      "description": "Mm Estudio es un estudio de ingeniería especializado en el diseño, cálculo y proyecto de estructuras de hormigón armado.",
+      "tecnologias": ["HTML", "CSS", "JavaScript", "React JS", "Figma"],
+      "imagen": "./mm.webp",
+      "linkWeb": "https://mmestudioing.com.ar/",
+      "condition": true,
+      "alternativeCondition": false
+    },
+    {
+      "title": "Gk Consulting - Landing Page ",
+      "description": "Gk Consulting es un proyecto realizado para representar la asociación entre un estudio contable y uno jurídico. Ofrece una variedad de servicios legales, como resolución de disputas y gestión de contratos, así como servicios contables, como regularización impositiva y asesoramiento online.",
+      "tecnologias": ["HTML", "CSS", "JavaScript", "React JS", "Figma"],
+      "imagen": "./gkConsulting.webp",
+      "linkWeb": "https://www.gkconsulting.com.ar/",
+      "condition": true,
+      "alternativeCondition": false
+    },
+    {
+      "title": "Smart Trading - Landing Page",
+      "description": "Smart Trading es una landing page diseñada para promocionar un producto innovador que facilita la integración de la tecnología disponible en el mercado con los procesos operativos de los agentes de bolsa. Cuyo objetivo es reducir el esfuerzo manual entre colaboradores y mitigar riesgos operativos.",
+      "tecnologias": ["HTML", "CSS", "JavaScript", "Astro", "Figma"],
+      "imagen": "./smartTrading.webp",
+      "linkGithub": "https://github.com/MatiasPinho/Adivina-el-numero",
+      "linkWeb": "https://www.smartrading.com.ar/",
+      "condition": true
+    },
+    {
+      "title": "Children SAFETY program - Landing Page",
+      "description": "Children SAFETY Program es una landing page diseñada para presentar un programa destinado a abordar el temor diario de los padres y garantizar la protección de los niños en su día a día.",
+      "tecnologias": ["HTML", "CSS", "JavaScript", "Astro", "Figma"],
+      "imagen": "./childrenAlternative.webp",
+      "linkWeb": "https://csk-i23o.vercel.app/",
+      "condition": true
+    }
+  ]
+}
