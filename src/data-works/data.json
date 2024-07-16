@@ -1,6 +1,24 @@
 {
   "proyectos": [
     {
+      "title": "Taskle - Gestor de tareas ",
+      "description": "Taskle es un gestor de tareas en tiempo real que integra front-end y back-end. Permite a cada usuario gestionar su lista de tareas, proyectos y dashboard personal, además de facilitar la colaboración entre equipos. Actualmente estoy desarrollando este proyecto.",
+      "tecnologias": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Express JS",
+        "React JS",
+        "MySQL",
+        "Figma"
+      ],
+      "imagen": "./taskle.webp",
+      "linkGithub": "https://github.com/MatiasPinho/Taskle-TaskManager",
+      "linkWeb": "https://taskle-task-manager.vercel.app/tasks",
+      "condition": true,
+      "alternativeCondition": true
+    },
+    {
       "title": "Codespresso - Ecommerce ",
       "description": "Proyecto Full Stack con Front-End en React JS y Back-End en MySQL y Express JS. Diseñado en Figma, presenta un catálogo de productos, opiniones y funcionalidades administrativas. La interfaz es intuitiva y hay una fluida conexión entre el Front-End y el Back-End. Todo esto se llevó a cabo en equipo mediante metodologías ágiles de Scrum. Tuvimos la oportunidad de presentar este proyecto en Prisma frente a diversas empresas.",
       "tecnologias": [
@@ -16,7 +34,7 @@
       "imagen": "./codepresso-destokp.webp",
       "linkGithub": "https://github.com/IIAGUSII/Proyecto-Coffe",
       "condition": false,
-      "alternativeCondition":true
+      "alternativeCondition": true
     },
     {
       "title": "Adivina el numero - Juego",
@@ -26,7 +44,7 @@
       "linkGithub": "https://github.com/MatiasPinho/Adivina-el-numero",
       "linkWeb": "https://adivina-el-numero-matias-pinho.netlify.app/",
       "condition": true,
-      "alternativeCondition":true
+      "alternativeCondition": true
     },
     {
       "title": "Calculadora - Herramienta",
@@ -36,7 +54,7 @@
       "linkGithub": "https://github.com/MatiasPinho/Calculate",
       "linkWeb": "https://calculate-matias-pinho.netlify.app/",
       "condition": true,
-      "alternativeCondition":true
+      "alternativeCondition": true
     }
   ]
 }
