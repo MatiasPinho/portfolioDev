@@ -5,7 +5,7 @@
       "description": "Mm Estudio es un estudio de ingeniería especializado en el diseño, cálculo y proyecto de estructuras de hormigón armado.",
       "tecnologias": ["HTML", "CSS", "JavaScript", "React JS", "Figma"],
       "imagen": "./mm.webp",
-      "linkWeb": "https://mmestudioing.com.ar/",
+      "linkWeb": "https://mmestudioing.pages.dev/",
       "condition": true,
       "alternativeCondition": false
     },
@@ -14,7 +14,7 @@
       "description": "Gk Consulting es un proyecto realizado para representar la asociación entre un estudio contable y uno jurídico. Ofrece una variedad de servicios legales, como resolución de disputas y gestión de contratos, así como servicios contables, como regularización impositiva y asesoramiento online.",
       "tecnologias": ["HTML", "CSS", "JavaScript", "React JS", "Figma"],
       "imagen": "./gkConsulting.webp",
-      "linkWeb": "https://www.gkconsulting.com.ar/",
+      "linkWeb": "https://gk-consulting.vercel.app/",
       "condition": true,
       "alternativeCondition": false
     },
