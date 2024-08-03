@@ -5,7 +5,7 @@
       "description": "Mm Estudio es un estudio de ingeniería especializado en el diseño, cálculo y proyecto de estructuras de hormigón armado.",
       "tecnologias": ["HTML", "CSS", "JavaScript", "React JS", "Figma"],
       "imagen": "./mm.webp",
-      "linkWeb": "https://mmestudioing.pages.dev/",
+      "linkWeb": "https://mm-estudio-ing.vercel.app/",
       "condition": true,
       "alternativeCondition": false
     },
